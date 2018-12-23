@@ -252,7 +252,7 @@ client.on('ready', () => {
   console.log(`|  Users Size ${client.users.size}  |`);
   console.log(`| Guilds Size ${client.guilds.size} |`);
   console.log(`|===================================|`);
-  console.log(`| Created By @$~¤Super_Man¤~$#9700  |`);
+  console.log(`| Created By @𝓥𝓝 | ! AimBot.js#0001  |`);
   console.log(`|===================================|`);
   console.log(`|        Over Bot Log By You !      |`);
   console.log(`|===================================|`);
@@ -443,7 +443,7 @@ client.on('message', message => {
   let embed = new Discord.RichEmbed()
 .setAuthor(message.author.username)
 .setColor("#9B59B6")
-.addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/NgdvJy3**")
+.addField(" ** :gear: Server Support :gear: **" , "  **[https://discord.gg/cpewWQ]**")
   
   
 message.channel.sendEmbed(embed);
@@ -468,17 +468,7 @@ m.delete();
 omar.reply("`تم حذف جميع الرتب بنجاح`")
 }
 });
-client.on('message', message => {
-    if (message.content === "#inv") {
-        if(!message.channel.guild) return;
-    let embed = new Discord.RichEmbed()
-    .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
-    .setTitle(`Click Here To Add OverBot `)
-    .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=498924229383946260&permissions=8&scope=bot`)
-    .setThumbnail(" https://cdn.discordapp.com/avatars/377904849783750667/6c76e412f18c142dfd711d05fb363869.png?size=2048")        
- message.channel.sendEmbed(embed);
-   }
-});
+
 
 client.on('message', message => {
     if (message.author.bot) return;
@@ -492,10 +482,6 @@ client.on('message', message => {
  message.author.sendMessage(`
  **
 [❖═════ General Commands ═══════❖]
-
-مخترع البوت
-! CuzImKiller#5203
-مخترع البوت
 
 
  #id معلومات عن حسابك الشخصي
@@ -851,4 +837,4 @@ message.channel.stopTyping()
 })
 }
 });
-client.login("NTIwOTczNDU1ODk4OTY4MDY2.Du1p6w.q_XNKMWVD4t-EOKeRgV2Zk2fng4");
+client.login(process.env.BOT_TOKEN);
